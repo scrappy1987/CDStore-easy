@@ -5,7 +5,17 @@
     <title>CD Store</title>
 
 </head>
-<body>
+<body class="container-fluid">
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">CDStore-Simple</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a ui-sref="cd">CD</a></li>
+        </ul>
+    </div>
+</nav>
 <div ui-view></div>
     <script src="scripts/jquery-2.1.4.min.js"></script>
     <script src="scripts/angular.min.js"></script>
