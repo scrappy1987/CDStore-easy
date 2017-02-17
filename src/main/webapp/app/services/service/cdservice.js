@@ -1,8 +1,16 @@
 (function() {
 
-    var CDService =  function(cdDal) {
+    var cdService =  function(cdDal) {
 
+        this.getcds = function () {
+            return cdDal.getcds();
+        };
+
+        this.getAllcds = function () {
+
+            return cdDal.getAllcds();
+        };
     };
 
-    angular.module('cdStore').service('cdService', ['cdDal', CDService]);
+    angular.module('cdStore').service('cdService', ['cdDal', cdService]);
 }());
